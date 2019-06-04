@@ -29,6 +29,8 @@ module.exports = {
     'indent' : 'off',
     'key-spacing' : 'off',
     'quotes' : 'off',
-    'no-multiple-empty-lines' : 'off'
+    'no-multiple-empty-lines' : 'off',
+    'comma-dangle' : 'off',
+    'no-trailing-spaces' : 'off'
   }
 }

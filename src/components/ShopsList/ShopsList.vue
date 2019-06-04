@@ -358,9 +358,6 @@
                   color #666
                 .segmentation
                   color #ccc
-
-
- 
 </style>
 
  
