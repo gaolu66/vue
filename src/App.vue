@@ -1,20 +1,19 @@
 <template>
   <div id="app">
     <router-view/>
-    <Footer/>
+    <FooterGuide/>
   </div>
 </template>
 
 <script>
-  import Footer from './components/Footer/Footer'
+  import FooterGuide from './components/FooterGuide/FooterGuide'
   export default {
     name: 'App',
     components: {
-      Footer
+      FooterGuide
     }
   }
 </script>
 
-<style lang="stylus" rel="stylesheet/stylus" scoped>
-  
+<style lang="stylus" rel="stylesheet/stylus" scoped>  
 </style>
