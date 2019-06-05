@@ -94,6 +94,7 @@
 <script>
   import Header from '../../components/Header/Header'
   export default {
+    name: 'Profile',
     components: {
       Header
     }

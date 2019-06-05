@@ -128,13 +128,20 @@
   import 'swiper/dist/css/swiper.css'
   import ShopsList from '../../components/ShopsList/ShopsList.vue'
   import Header from '../../components/Header/Header'
+  import { reqAddress } from '../../api'
 
   export default {
+    name: 'MSite',
+    data () {
+      return {
+        title: ''
+      }
+    },
     components: {
       ShopsList,
       Header
     },
-    mounted () {
+    async mounted () {
       /* eslint-disable no-new */
       new Swiper('.swiper-container', {
         loop: true,
@@ -142,7 +149,9 @@
           el: '.swiper-pagination'
         }
       })
-    },
+      const result = await reqAddress(116.36867, 40.10038)
+      this.title = result.data.name
+    }
   }
 </script>
 
